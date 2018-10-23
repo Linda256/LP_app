@@ -2,7 +2,7 @@
   "name": "profile_app",
   "version": "1.0.0",
   "description": "An simple app to show users profile",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "mongoose": "^5.3.6"
+    "mongoose": "^5.3.6",
+    "validator": "^10.8.0"
   }
 }
