@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
-import login from './components/auth/Login';
+import Login from './components/auth/Login';
 
 import './App.css';
 
@@ -16,8 +16,8 @@ class App extends Component {
           <Navbar />
           <Route exact path='/' component = { Landing } />
           <div className= "container">
-            <Router exact path='/register' component = { Register } />
-            <Router exact path='/login' component = { login } />
+            <Route exact path="/register" component = { Register } />
+            <Route exact path="/login" component = { Login } />
           </div>
         </div>
       </Router>
@@ -26,5 +26,7 @@ class App extends Component {
     );
   }
 }
-
 export default App;
+
+
+
